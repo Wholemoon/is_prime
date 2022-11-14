@@ -1,2 +1,1 @@
-In order to execute the mainfile, you need to download it as a zip, with the green Code button. Then you need to extract the mainfile. After that open your commandline. With the help of "cd {foldername}" you can go to the folder, where the mainfile is located. Then type in "cc main.c". Then you will get a a.exe or a a.out file. On Windows you can execute it by typing "a.exe". On linux you will need to type "./a.out".
 If you find any bugs, errors or other mistakes I made please contact me.
