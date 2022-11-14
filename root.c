@@ -15,8 +15,8 @@ double root(double number){
 }
 
 void main(){
-  double numbertoroot;
+  double number;
   printf("%s", "Give me a number and I will give the root: ");
-  scanf("lf", &numbertoroot);
-  printf("%.10lf\n", root(numbertoroot));
+  scanf("lf", &number);
+  printf("%.10lf\n", root(number));
 }
