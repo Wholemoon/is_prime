@@ -4,7 +4,7 @@ double root(double number){
   double numb=number, ref=2;
   int c=0;
   numb=number/ref;
-  while(c<100){
+  while(c<10){
     c++;
     ref=(numb+ref)/2;
     numb=number/ref;
