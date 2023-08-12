@@ -1,32 +1,33 @@
 #include<stdio.h>
-#include<string.h>
 
-char *is_prime(unsigned long long int number){
+int is_prime(unsigned long long int number){
   unsigned long long int ref = 2;
   if(ref > number){
-    return("False");
+    return(0);
   }
   while(ref*ref <= number){
     if(number%ref == 0){
-      return("False");
+      return(0);
     }
     ref++;
   }
-  return("True");
+  return(1);
 }
 
-void main(){
+int main(){
   unsigned long long int number;
+  int output;
   
   printf("%s", "Give me a number to check: ");
   scanf("%llu", &number);
   
-  char *output = is_prime(number);
-  
-  if(strcmp(output, "True") == 0){
-    printf("%llu is a prime number.\n", number);
+  output = is_prime(number);
+
+  if(output==1){
+   printf("%lld is a prime number.\n", number);
   }
-  if(strcmp(output, "False") == 0){
-    printf("%llu is not a prime number.\n", number);
+  if(output==0){
+   printf("%lld is not a prime number.\n", number);
   }
+  return(0);
 }
